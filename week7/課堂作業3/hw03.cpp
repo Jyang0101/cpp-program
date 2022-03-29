@@ -39,36 +39,31 @@ double return_num(int g)
 int main()
 {
     int g;
-    int col = -1;
-    double save_name_add = 0;
-    int save = 0;
-    int k;
+    int col = -2;
+    float gpa = 0;
+    int tc = 0;
+
+    cout.precision(2);
     while (cin >> g)
     {
-
         if (col < 0)
         {
-
-            save_name_add = 0;
-            save = g;
+            if (col != -2)
+            {
+                cout << setw((6 - tc) * 5) << right << gpa / tc << endl;
+            }
+            tc = g;
             col = g - 1;
-            k = g;
-            cout << endl;
+            gpa = 0;
         }
         else
         {
-            save_name_add += return_num(g);
-            cout << toLG(g) <<'\t';
+            gpa += toGP(g);
+            cout << setw(5) << left << toLG(g);
             col--;
-            if (col < 0) {
-                for (int i = k; i < 5; i++)cout << '\t';
-                cout << setprecision(2) << save_name_add / (save) << endl;
-
-            }
         }
-
     }
+    (tc > 0) && cout << setw((6 - tc) * 5) << right << gpa / tc << endl;
 
     return 0;
-
 }
