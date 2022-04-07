@@ -18,11 +18,11 @@ int main()
     sort(arr, arr+5);
 
     cout << endl;
-    cout << "sort array by default (increasing) : " ;
+    // cout << "sort array by default (increasing) : " ;
 
     for (int i = 0; i < 5; i++)
     {
-        cout << arr[i] << " " ;
+        cout << setw(4) << arr[i] ;
 
         if(b > max){
         max = b;}
@@ -48,7 +48,6 @@ int main()
 cout << endl;
 cout << "max = " << max << endl;
 cout << "min = " << min << endl;
-cout << "mid = " << arr[2] << endl;
 
 
 

@@ -1,21 +1,30 @@
-#include<iostream>
-using namespace std;
+#include <iostream> 
+#include <algorithm>
 
-int main()
-{
-    int n;
+using namespace std; 
 
-    cin >> n;
+int main()  {
 
-    for(int i=1 ; i<=n ; i=i+1 )
-    {
-        for(int j=1 ; j<=i ; j=j+1 )
-        {
-            cout << "*";
-        }
-        cout << endl;
-    }
+  int arr[10]; 
 
+  cout << "Enter an integer : ";
 
-    return 0;
+  for (int i = 0; i < 10; i++)
+  {
+   cin >> arr[i]; 
+
+   int x = arr[i]; 
+
+   for (int j = 0; j < x; j++)
+   { 
+
+     cout<< "*";
+
+   }
+
+   cout<<endl; 
+  }
+
+return 0;
+
 }
