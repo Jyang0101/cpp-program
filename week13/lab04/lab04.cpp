@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void dump(int dat[], int n, int x = 5, int col = 5)
+void dump(int dat[], int n, int x = 5, int col = 10)
 {
     int i;
 
