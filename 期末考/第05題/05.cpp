@@ -51,7 +51,7 @@ int main()
         cout << setw(5) << n;
     }
     gpa = tpa / pot;
-    cout << setw(5) << fixed << setprecision(2) << gpa << endl;
+    cout << setw(5) << fixed << setprecision(2) << gpa << endl; //不可修改
 
     return 0;
 }
